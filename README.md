@@ -12,3 +12,8 @@ En este se explica cómo configurar el backend utilizando Node.js y Express. Se 
  
  -- ¿Por qué es tan bueno usar UUID en vez de un id autonumérico?
  Una buena razón para usar UUID en lugar de un ID autonumérico es que los UUID son únicos a nivel mundial, lo que evita las colisiones de ID y permite su generación en sistemas distribuidos sin depender de una base de datos específica.
+
+-- ¿ Qué es el parámetro de Salt Rounds de la librería bcryptjs?
+El parámetro "Salt Rounds" en la librería bcryptjs se refiere a la cantidad de veces que se aplica una función de hashing llamada "bcrypt" al generar un hash de contraseña. El valor de "Salt Rounds" indica la complejidad computacional del proceso de hashing y afecta la resistencia a ataques de fuerza bruta.
+
+Un mayor número de salt rounds resulta en un hash más seguro pero también aumenta el tiempo necesario para generar el hash. Es importante encontrar un equilibrio entre seguridad y rendimiento al seleccionar el valor adecuado para "Salt Rounds".
